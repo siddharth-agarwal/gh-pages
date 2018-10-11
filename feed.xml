@@ -3,7 +3,7 @@
     <title>thedeep3nd.io</title>
     <link href="https://siddharth-agarwal.github.io/gh-pages/feed.xml" rel="self" />
     <link href="https://siddharth-agarwal.github.io/gh-pages" />
-    <updated>2018-10-11T18:23:56-04:00</updated>
+    <updated>2018-10-11T18:49:18-04:00</updated>
     <author>
         <name>siddharth</name>
     </author>
@@ -17,18 +17,18 @@
         <link href="https://siddharth-agarwal.github.io/gh-pages/first-post/"/>
         <id>https://siddharth-agarwal.github.io/gh-pages/first-post/</id>
 
-        <updated>2018-10-11T18:23:41-04:00</updated>
+        <updated>2018-10-11T18:48:59-04:00</updated>
             <summary>
                 <![CDATA[
                         <img src="https://siddharth-agarwal.github.io/gh-pages/media/posts/1/" alt="" />
-                    Surprised at how easy/straightforward the process was to get this blog up and running&hellip;
+                    Surprised at how easy/straightforward it was to get this blog up and running using Publii.
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
                     <img src="https://siddharth-agarwal.github.io/gh-pages/media/posts/1/" alt="" />
-                <p class="align-left">Surprised at how easy/straightforward the process was to get this blog up and running using <a href="https://getpublii.com" target="_blank" rel="noopener noreferrer">Publii</a>. Happened to come across their Github repo the other day and decided to give it a shot.</p>
-<p>With regard to the current setup, I'm using a Github Pages backend (link to the <a href="https://github.com/siddharth-agarwal/gh-pages" target="_blank" rel="noopener noreferrer">Github repo</a>) redirected to a custom domain name (<em>thedeep3nd.io</em>) - Publii handles most/all of the boilerplate JS/CSS/HTML code to link the two. I looked into some other options - namely, Jekyll and Octopress - when deciding on a framework for this site, but Publii had a couple things that really appealed to me and eventually won me over:</p>
+                <p class="align-left">Surprised at how easy/straightforward it was to get this blog up and running using <a href="https://getpublii.com" target="_blank" rel="noopener noreferrer">Publii</a>. I've owned this domain for a little while now and I remember looking at some similar (closed-source) tools in the past, but wasn't too impressed. Think that I was browsing Github's 'Trending Repositories' page when I came across Publii's repo, and was pretty impressed by their site.</p>
+<p>With regard to my current setup, I'm using a Github Pages backend (link to the <a href="https://github.com/siddharth-agarwal/gh-pages" target="_blank" rel="noopener noreferrer">Github repo</a>) redirected to from a custom domain name (<em>thedeep3nd.io</em>) - Publii handles most/all of the boilerplate JS/CSS/HTML code necessary to link everything up. I looked into some other options - namely, Jekyll and Octopress - when deciding on a framework for the site, but Publii had a couple things that really appealed to me and eventually won me over:</p>
 <ul>
 <li>great desktop client for Mac</li>
 <li><strong>accessible/concise documentation</strong></li>
