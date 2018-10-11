@@ -1,12 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <title>thedeep3nd</title>
+    <title>thedeep3nd.io</title>
     <link href="https://siddharth-agarwal.github.io/gh-pages/feed.xml" rel="self" />
     <link href="https://siddharth-agarwal.github.io/gh-pages" />
-    <updated>1969-12-31T19:00:00-05:00</updated>
+    <updated>2018-10-11T18:23:56-04:00</updated>
     <author>
         <name>siddharth</name>
     </author>
     <id>https://siddharth-agarwal.github.io/gh-pages</id>
 
+    <entry>
+        <title>first post</title>
+        <author>
+            <name>siddharth</name>
+        </author>
+        <link href="https://siddharth-agarwal.github.io/gh-pages/first-post/"/>
+        <id>https://siddharth-agarwal.github.io/gh-pages/first-post/</id>
+
+        <updated>2018-10-11T18:23:41-04:00</updated>
+            <summary>
+                <![CDATA[
+                        <img src="https://siddharth-agarwal.github.io/gh-pages/media/posts/1/" alt="" />
+                    Surprised at how easy/straightforward the process was to get this blog up and running&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                    <img src="https://siddharth-agarwal.github.io/gh-pages/media/posts/1/" alt="" />
+                <p class="align-left">Surprised at how easy/straightforward the process was to get this blog up and running using <a href="https://getpublii.com" target="_blank" rel="noopener noreferrer">Publii</a>. Happened to come across their Github repo the other day and decided to give it a shot.</p>
+<p>With regard to the current setup, I'm using a Github Pages backend (link to the <a href="https://github.com/siddharth-agarwal/gh-pages" target="_blank" rel="noopener noreferrer">Github repo</a>) redirected to a custom domain name (<em>thedeep3nd.io</em>) - Publii handles most/all of the boilerplate JS/CSS/HTML code to link the two. I looked into some other options - namely, Jekyll and Octopress - when deciding on a framework for this site, but Publii had a couple things that really appealed to me and eventually won me over:</p>
+<ul>
+<li>great desktop client for Mac</li>
+<li><strong>accessible/concise documentation</strong></li>
+<li>ability to build/preview local changes before deploying (committing) to the Github repo</li>
+<li>an active and growing open-source community</li>
+<li>free to use!</li>
+</ul>
+<p>I'm sure that it's not the most feature-rich or customizable CMS tool out there, but it seems to have pretty much everything that I want: simplicity, ease of use, and (hopefully) dependability.  </p>
+<hr><address>More to come.</address>
+            ]]>
+        </content>
+    </entry>
 </feed>
