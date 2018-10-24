@@ -1,32 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <title>thedeep3nd.io</title>
-    <link href="https://siddharth-agarwal.github.io/gh-pages/feed.xml" rel="self" />
-    <link href="https://siddharth-agarwal.github.io/gh-pages" />
-    <updated>2018-10-15T01:16:22-04:00</updated>
+    <title>thedeep3nd</title>
+    <link href="https://thedeep3nd.io/feed.xml" rel="self" />
+    <link href="https://thedeep3nd.io" />
+    <updated>2018-10-24T03:59:18-04:00</updated>
     <author>
         <name>siddharth</name>
     </author>
-    <id>https://siddharth-agarwal.github.io/gh-pages</id>
+    <id>https://thedeep3nd.io</id>
 
     <entry>
         <title>first post</title>
         <author>
             <name>siddharth</name>
         </author>
-        <link href="https://siddharth-agarwal.github.io/gh-pages/first-post/"/>
-        <id>https://siddharth-agarwal.github.io/gh-pages/first-post/</id>
+        <link href="https://thedeep3nd.io/first-post/"/>
+        <id>https://thedeep3nd.io/first-post/</id>
 
-        <updated>2018-10-11T18:48:59-04:00</updated>
+        <updated>2018-10-21T22:02:19-04:00</updated>
             <summary>
                 <![CDATA[
-                        <img src="https://siddharth-agarwal.github.io/gh-pages/media/posts/1/" alt="" />
+                        <img src="https://thedeep3nd.io/media/posts/1/" alt="" />
                     Surprised at how easy/straightforward it was to get this blog up and running using Publii.
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
-                    <img src="https://siddharth-agarwal.github.io/gh-pages/media/posts/1/" alt="" />
+                    <img src="https://thedeep3nd.io/media/posts/1/" alt="" />
                 <p class="align-left">Surprised at how easy/straightforward it was to get this blog up and running using <a href="https://getpublii.com" target="_blank" rel="noopener noreferrer">Publii</a>. I've owned this domain for a little while now and I remember looking at some similar (closed-source) tools in the past, but wasn't too impressed. Think that I was browsing Github's 'Trending Repositories' page when I came across Publii's repo, and was pretty impressed by their site.</p>
 <p>With regard to my current setup, I'm using a Github Pages backend (link to the <a href="https://github.com/siddharth-agarwal/gh-pages" target="_blank" rel="noopener noreferrer">Github repo</a>) redirected to from a custom domain name (<em>thedeep3nd.io</em>) - Publii handles most/all of the boilerplate JS/CSS/HTML code necessary to link everything up. I looked into some other options - namely, Jekyll and Octopress - when deciding on a framework for the site, but Publii had a couple things that really appealed to me and eventually won me over:</p>
 <ul>
