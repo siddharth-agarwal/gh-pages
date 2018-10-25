@@ -9,5 +9,23 @@
         "name": "siddharth"
     },
     "items": [
+        {
+            "id": "https://thedeep3nd.io/first-post/",
+            "url": "https://thedeep3nd.io/first-post/",
+            "title": "first post",
+            "summary": "Surprised at the growth in the open-source CMS space over the last&hellip;",
+            "content_html": "<p class=\"align-left\">Surprised at the growth in the open-source CMS space over the last couple years. It was a pretty straightforward process to get a blog up and running (with some help from <a href=\"https://getpublii.com\" target=\"_blank\" rel=\"noopener noreferrer\">Publii</a> and Github Pages). I've had this domain - <a href=\"thedeep3nd.io\" target=\"_blank\" rel=\"noopener noreferrer\">thedeep3nd.io</a> - for a while now, but never got around to utiziling it - vaguely remember looking at some (closed-source) tools at the time I purchased the name but the process seemed time-consuming and involved.</p>\n<p><span style=\"text-decoration: underline;\">Github Pages</span>: Big fan of the nearly seamless integration of Github Pages and Jekyll; it's nice to be able to use these kinds of tools (which saves developers hours of debugging minor bugs). With Publii handling the work of locally building the project, committing the changes to Github, and deploying, my workflow doesn't need to involve the command line at all.</p>\n<p>With regard to my current setup: Github Pages is serving as the hosting service for the site (which means that behind the scenes, I have a Github repository containing the code that builds this site). A commit to this repo triggers a rebuild/redeploy of the whole site on their end. It's a bit complicated by the custom domain that I'm using, which involved creating a <code>CNAME</code> file which handles redirects/DNS stuff<em>.</em> For the most part though, Publii and gh-pages create all of the boilerplate JS/HTML/Ruby pieces necessary to link everything up. I did look into some other options - namely, Jekyll and Octopress - when deciding on a framework for the site, but Publii had a couple things that really appealed to me and eventually won me over:</p>\n<ul>\n<li>a desktop client for Mac</li>\n<li>accessible/concise documentation</li>\n<li>ability to build/preview local changes before deploying (committing) to the Github repo</li>\n<li>an active and growing open-source community</li>\n<li><em>free</em> to use</li>\n</ul>\n<p>I'm sure that it's not the most feature-rich or customizable CMS tool out there, but it seems to have pretty much everything that I want: simplicity, ease of use, and (hopefully) dependability.  </p>\n<hr><address>More to come.</address>",
+            "image": "https://thedeep3nd.io/media/posts/1/",
+            "author": {
+                "name": "siddharth"
+            },
+            "tags": [
+                   "publii",
+                   "cms",
+                   "blog"
+            ],
+            "date_published": "2018-10-11T18:14:30-04:00",
+            "date_modified": "2018-10-25T19:01:19-04:00"
+        }
     ]
 }
