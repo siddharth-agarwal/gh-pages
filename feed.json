@@ -10,6 +10,21 @@
     },
     "items": [
         {
+            "id": "https://thedeep3nd.io/fun-with-dns/",
+            "url": "https://thedeep3nd.io/fun-with-dns/",
+            "title": "fun with DNS",
+            "summary": "or working through minor issues w/ publii/gh-pages/namecheapnamecheap needs DNS records which point&hellip;",
+            "content_html": "<h4><span  >or</span> <span style=\"text-decoration: underline;\"><em>working through minor issues w/ publii/gh-pages/namecheap</em></span></h4>\n<p><span style=\"text-decoration: underline;\">namecheap needs DNS records which point to gh-pages' IP addresses. </span></p>\n<p>This needs to be updated through Namecheap (in the domain 'control panel'), keeping in mind that they aren't hosting anything. That is left up to the user; options are to either:</p>\n<ul>\n<li>maintain a physical server which will directly host the site</li>\n<li>use a hosting service such as Wordpress (paid) or Github Pages/Gitlab Pages (free)</li>\n</ul>\n<p>My setup: <em>gh-pages</em> is the name of my Github repository. When a change gets pushed to the master branch, a couple things happen behind the scenes:</p>\n<ol>\n<li>Github Pages <em>builds</em> the project</li>\n<li>Assuming a successful build, the site is then <em>deployed</em> to <code>username.github.io/gh-pages</code></li>\n<li>Depending on the DNS configuration, hitting the <code>thedeep3nd.io</code> URL should show the updated site (basically a mirror of the other site).</li>\n</ol>\n<p><span style=\"text-decoration: underline;\">CNAME files</span></p>\n<p><code>CNAME</code> is a top-level file in the parent directory that is used by Github Pages to handle custom domain names. Any change (modification, creation, deletion) to the C<em>ustom Domain</em> field (in repo settings) will be treated as an actual commit to repo.</p>\n<p>Another relevant fact: Github Pages limits you to one site per organization (<a href=\"http://username.github.io/\">username.github.io</a>), but does not limit the number of <em>project</em> sites you're allowed to have, ie. <a href=\"http://username.github.io/myoroject\">username.github.io/myproject</a> is also allowed, assuming that <em>myproject</em> is a gh-pages repo.</p>\n<p>However, issues can appear when:</p>\n<ul style=\"list-style-type: circle;\">\n<li>Two (or more) separate gh-pages repos have the <strong>same</strong> custom domain in their CNAMEs. This is easier to fix since its a github issue, whereas:</li>\n<li>your DNS records (hosted by Namecheap) are broken because of either an incorrect <em>A</em> record (mapping your domain to the Github Pages IPs</li>\n</ul>\n<p>In my haste to try out Publii, while I already had <a href=\"http://siddharth-agarwal.github.io\">siddharth-agarwal.github.io</a> being published from its own repo, my new repo now also had an identical CNAME.</p>\n<p>Eventally I tracked down the issue: I had added a URL redirect (?) from <a href=\"http://siddharth-agarwal.github.io\">siddharth-agarwal.github.io</a> → <a href=\"http://thedeep3nd.io\">thedeep3nd.io</a> <em>manually in my Namecheap settings</em>. So essentially, after a Publii commit to gh-pages, everything would break.</p>\n<p>Once I deleted the CNAME record from Namecheap's DNS management system, everything started to work again.</p>\n<pre><code>&gt; dig +noall +answer thedeep3nd.io\nthedeep3nd.io.\t\t1798\tIN\tA\t185.199.111.153\nthedeep3nd.io.\t\t1798\tIN\tA\t185.199.108.153\nthedeep3nd.io.\t\t1798\tIN\tA\t185.199.110.153\nthedeep3nd.io.\t\t1798\tIN\tA\t185.199.109.153\n\n## after everything started working again ##\n</code></pre>\n<p>Strange issue.</p>",
+            "image": "https://thedeep3nd.io/media/posts/2/",
+            "author": {
+                "name": "siddharth"
+            },
+            "tags": [
+            ],
+            "date_published": "2018-10-26T19:59:10-04:00",
+            "date_modified": "2018-10-26T19:59:10-04:00"
+        },
+        {
             "id": "https://thedeep3nd.io/first-post/",
             "url": "https://thedeep3nd.io/first-post/",
             "title": "first post",
