@@ -1,14 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <title>thedeep3nd</title>
+    <title>thedeep3nd.io</title>
     <link href="https://thedeep3nd.io/feed.xml" rel="self" />
     <link href="https://thedeep3nd.io" />
-    <updated>2018-10-26T19:59:29-04:00</updated>
+    <updated>2019-03-27T23:13:04-04:00</updated>
     <author>
         <name>siddharth</name>
     </author>
     <id>https://thedeep3nd.io</id>
 
+    <entry>
+        <title>the future role of AI in finance</title>
+        <author>
+            <name>siddharth</name>
+        </author>
+        <link href="https://thedeep3nd.io/the-role-of-ai-in-finance/"/>
+        <id>https://thedeep3nd.io/the-role-of-ai-in-finance/</id>
+
+        <updated>2019-03-27T23:02:20-04:00</updated>
+            <summary>
+                <![CDATA[
+                    'AI', 'machine learning', and 'big data' are relevant today as buzzwords; having&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <p>'AI', 'machine learning', and 'big data' are relevant today as <em>buzzwords</em>; having succumbed to misuse and overuse by the media in the past decade. One of the worst offenders in recent times seems to be the financial media, which seems to rarely draw distinctions between the core ideas behind these terms.</p>
+<p>However, I think that this <a href="https://www.bloomberg.com/graphics/2017-wall-street-robots/" target="_blank" rel="noopener noreferrer">article</a> in Bloomberg from October of last year does a good job of covering the potential impact of technology in finance, distinguishing between the buy/sell-side and further breaking things down sector-by-sector. Here is an overview which I think summarizes the main themes in the article well:</p>
+<pre><i>Sell side credit markets</i>: Natural-language processing, data collection and machine learning are being applied to automate subjective human decisions.<br><br><i>Sell side foreign exchange</i>: Big data and machine learning are being used to anticipate variations in client demand and the resulting price swings.<br><br><i>Sell side commodities</i>: Trader and salesperson conversations are being catalogued to create profiles of clients.<br><br><i>Sell side equities</i>: Artificial intelligence is being applied to order execution.<br><br><i>Buy side equities</i>: Predictive analytics is being applied to time stock purchases and assess risk based on market liquidity.<br><br><i>Buy side credit</i>: Computer programs are being trained to scan and understand bond covenants, legal documents and court rulings.<br><br><i>Buy side macroeconomics</i>: Natural-language processing is being used to analyze central bank commentary for clues on monetary policy. Other software is analyzing data such as oil-tanker shipments and satellite images (e.g., Chinese industrial sites, Walmart parking lots and more) to spot trends in the economy.</pre>
+            ]]>
+        </content>
+    </entry>
     <entry>
         <title>fun with DNS</title>
         <author>
@@ -17,16 +39,16 @@
         <link href="https://thedeep3nd.io/fun-with-dns/"/>
         <id>https://thedeep3nd.io/fun-with-dns/</id>
 
-        <updated>2018-10-26T19:59:10-04:00</updated>
+        <updated>2018-10-26T20:13:23-04:00</updated>
             <summary>
                 <![CDATA[
-                        <img src="https://thedeep3nd.io/media/posts/2/" alt="" />
+                        <img src="https://thedeep3nd.io/media/posts/2/IMG_0007.png" alt="" />
                     or working through minor issues w/ publii/gh-pages/namecheapnamecheap needs DNS records which point&hellip;
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
-                    <img src="https://thedeep3nd.io/media/posts/2/" alt="" />
+                    <img src="https://thedeep3nd.io/media/posts/2/IMG_0007.png" alt="" />
                 <h4><span  >or</span> <span style="text-decoration: underline;"><em>working through minor issues w/ publii/gh-pages/namecheap</em></span></h4>
 <p><span style="text-decoration: underline;">namecheap needs DNS records which point to gh-pages' IP addresses. </span></p>
 <p>This needs to be updated through Namecheap (in the domain 'control panel'), keeping in mind that they aren't hosting anything. That is left up to the user; options are to either:</p>
@@ -70,20 +92,15 @@ thedeep3nd.io.		1798	IN	A	185.199.109.153
         </author>
         <link href="https://thedeep3nd.io/first-post/"/>
         <id>https://thedeep3nd.io/first-post/</id>
-            <category term="publii"/>
-            <category term="cms"/>
-            <category term="blog"/>
 
         <updated>2018-10-25T19:01:19-04:00</updated>
             <summary>
                 <![CDATA[
-                        <img src="https://thedeep3nd.io/media/posts/1/" alt="" />
                     Surprised at the growth in the open-source CMS space over the last&hellip;
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
-                    <img src="https://thedeep3nd.io/media/posts/1/" alt="" />
                 <p class="align-left">Surprised at the growth in the open-source CMS space over the last couple years. It was a pretty straightforward process to get a blog up and running (with some help from <a href="https://getpublii.com" target="_blank" rel="noopener noreferrer">Publii</a> and Github Pages). I've had this domain - <a href="thedeep3nd.io" target="_blank" rel="noopener noreferrer">thedeep3nd.io</a> - for a while now, but never got around to utiziling it - vaguely remember looking at some (closed-source) tools at the time I purchased the name but the process seemed time-consuming and involved.</p>
 <p><span style="text-decoration: underline;">Github Pages</span>: Big fan of the nearly seamless integration of Github Pages and Jekyll; it's nice to be able to use these kinds of tools (which saves developers hours of debugging minor bugs). With Publii handling the work of locally building the project, committing the changes to Github, and deploying, my workflow doesn't need to involve the command line at all.</p>
 <p>With regard to my current setup: Github Pages is serving as the hosting service for the site (which means that behind the scenes, I have a Github repository containing the code that builds this site). A commit to this repo triggers a rebuild/redeploy of the whole site on their end. It's a bit complicated by the custom domain that I'm using, which involved creating a <code>CNAME</code> file which handles redirects/DNS stuff<em>.</em> For the most part though, Publii and gh-pages create all of the boilerplate JS/HTML/Ruby pieces necessary to link everything up. I did look into some other options - namely, Jekyll and Octopress - when deciding on a framework for the site, but Publii had a couple things that really appealed to me and eventually won me over:</p>
