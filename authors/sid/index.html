@@ -126,7 +126,7 @@
            window.addEventListener('DOMContentLoaded', function() {
                (function($) {
                 $(document).ready(function() {
-                    var grid=$(".layout").isotope({itemSelector:".card",layoutMode:"masonry",masonry:{columnWidth:".card"},transitionDuration:"0.2s"});$(".layout").each(function(){var t=$(this);this.addEventListener("load",function(){t.isotope("layout")},!0)});var items=grid.find(".card");grid.addClass("layout--is-showing-cards").isotope("revealItemElements",items),$(".filter").on("click",".filter__item",function(){var t=$(this).attr("data-filter");grid.isotope({filter:t})});
+                    var grid=$(".layout").isotope({itemSelector:".card",layoutMode:"masonry",masonry:{columnWidth:".card"},transitionDuration:"0s"});$(".layout").each(function(){var t=$(this);this.addEventListener("load",function(){t.isotope("layout")},!0)});var items=grid.find(".card");grid.addClass("layout--is-showing-cards").isotope("revealItemElements",items),$(".filter").on("click",".filter__item",function(){var t=$(this).attr("data-filter");grid.isotope({filter:t})});
                 });
                })(jQuery);
            });
