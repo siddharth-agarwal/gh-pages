@@ -3,7 +3,7 @@
     <title>thedeep3nd.io</title>
     <link href="https://thedeep3nd.io/feed.xml" rel="self" />
     <link href="https://thedeep3nd.io" />
-    <updated>2019-04-05T16:23:34-04:00</updated>
+    <updated>2020-03-08T20:35:22-04:00</updated>
     <author>
         <name>siddharth</name>
     </author>
@@ -39,6 +39,7 @@
         </author>
         <link href="https://thedeep3nd.io/fun-with-dns/"/>
         <id>https://thedeep3nd.io/fun-with-dns/</id>
+            <category term="publii"/>
 
         <updated>2018-10-26T20:13:23-04:00</updated>
             <summary>
@@ -93,6 +94,9 @@ thedeep3nd.io.		1798	IN	A	185.199.109.153
         </author>
         <link href="https://thedeep3nd.io/first-post/"/>
         <id>https://thedeep3nd.io/first-post/</id>
+            <category term="publii"/>
+            <category term="cms"/>
+            <category term="blog"/>
 
         <updated>2018-10-25T19:01:19-04:00</updated>
             <summary>

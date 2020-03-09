@@ -58,10 +58,14 @@ textarea {
 .buffer:hover .icon {
   fill: #222222; }
 
-.stumbleupon:hover .icon {
-  fill: #eb4924; }
+.mix:hover .icon {
+  fill: #fd8235; }
 
 html {
+  font-smooth: always;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
   overflow-y: scroll; }
   html {
     font-size: 1rem; }
@@ -77,7 +81,9 @@ body {
   color: #111111;
   font-family: "Heebo", sans-serif;
   font-weight: 400;
-  line-height: 1.6; }
+  line-height: 1.6;
+  -ms-scroll-chaining: none;
+  overscroll-behavior: none; }
 
 a {
   color: #ff80ab;
@@ -115,11 +121,11 @@ p,
 ul,
 ol,
 dl,
-table,
-hr {
+table {
   margin-top: 1.5rem; }
 
-figure {
+figure,
+hr {
   margin-top: 2.25rem;
   margin-bottom: 2.25rem; }
 
@@ -305,10 +311,19 @@ sup {
   font-size: 65%; }
 
 hr {
-  border: 0;
-  height: 0;
-  border-top: 1px solid #dedede;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.3); }
+  background: 0 0;
+  border: none;
+  height: auto;
+  line-height: 1;
+  max-width: none;
+  text-align: center; }
+  hr::before {
+    content: "\00b7 \00b7 \00b7";
+    color: #111111;
+    font-size: 1.26562rem;
+    font-weight: 500;
+    letter-spacing: 1rem;
+    padding-left: 1rem; }
 
 .btn, [type=button],
 [type=submit],
@@ -1165,6 +1180,30 @@ main {
   -webkit-text-decoration-skip: ink;
   text-decoration-skip: ink; }
 
+.post__toc h3 {
+  font-size: 1.125rem; }
+  @media screen and (min-width: 20rem) {
+    .post__toc h3 {
+      font-size: calc(1.125rem + 0 * ((100vw - 20rem) / 113)); } }
+  @media screen and (min-width: 133rem) {
+    .post__toc h3 {
+      font-size: 1.125rem; } }
+
+.post__toc ul {
+  counter-reset: item;
+  list-style: decimal;
+  margin: 0.75rem 0 0 1rem; }
+  .post__toc ul li {
+    counter-increment: item;
+    padding: 0; }
+  .post__toc ul ul {
+    margin-top: 0; }
+    .post__toc ul ul li {
+      display: block; }
+      .post__toc ul ul li:before {
+        content: counters(item, ".") ". ";
+        margin-left: -20px; }
+
 .post__footer {
   margin-top: 3rem; }
   @media all and (max-width: 37.4375em) {
@@ -1551,43 +1590,111 @@ main {
       flex-wrap: wrap; } }
   @media all and (min-width: 20em) {
     .gallery[data-columns="1"] .gallery__item {
-      width: 100%; } }
+      -webkit-box-flex: 1;
+      -ms-flex: 1 0 100%;
+      flex: 1 0 100%; } }
   @media all and (min-width: 30em) {
     .gallery[data-columns="2"] .gallery__item {
-      width: 50%; } }
+      -webkit-box-flex: 1;
+      -ms-flex: 1 0 50%;
+      flex: 1 0 50%; } }
   @media all and (min-width: 37.5em) {
     .gallery[data-columns="3"] .gallery__item {
-      width: 33%; } }
+      -webkit-box-flex: 1;
+      -ms-flex: 1 0 33.333%;
+      flex: 1 0 33.333%; } }
   @media all and (min-width: 56.25em) {
     .gallery[data-columns="4"] .gallery__item {
-      width: 25%; } }
+      -webkit-box-flex: 0;
+      -ms-flex: 0 1 25%;
+      flex: 0 1 25%; } }
   @media all and (min-width: 56.25em) {
     .gallery[data-columns="5"] .gallery__item {
-      width: 20%; } }
+      -webkit-box-flex: 0;
+      -ms-flex: 0 1 20%;
+      flex: 0 1 20%; } }
   @media all and (min-width: 56.25em) {
     .gallery[data-columns="6"] .gallery__item {
-      width: 16.666%; } }
+      -webkit-box-flex: 0;
+      -ms-flex: 0 1 16.666%;
+      flex: 0 1 16.666%; } }
   @media all and (min-width: 56.25em) {
     .gallery[data-columns="7"] .gallery__item {
-      width: 14.285%; } }
+      -webkit-box-flex: 1;
+      -ms-flex: 1 0 14.285%;
+      flex: 1 0 14.285%; } }
   @media all and (min-width: 56.25em) {
     .gallery[data-columns="8"] .gallery__item {
-      width: 12.5%; } }
+      -webkit-box-flex: 1;
+      -ms-flex: 1 0 12.5%;
+      flex: 1 0 12.5%; } }
   .gallery__item {
     margin: 0;
-    padding: 0.5rem; }
+    padding: 0.5rem;
+    position: relative; }
     @media all and (min-width: 20em) {
       .gallery__item {
-        width: 50%; } }
+        -webkit-box-flex: 1;
+        -ms-flex: 1 0 50%;
+        flex: 1 0 50%; } }
     @media all and (min-width: 30em) {
       .gallery__item {
-        width: 33.333%; } }
+        -webkit-box-flex: 1;
+        -ms-flex: 1 0 33.333%;
+        flex: 1 0 33.333%; } }
     @media all and (min-width: 37.5em) {
       .gallery__item {
-        width: 25%; } }
+        -webkit-box-flex: 1;
+        -ms-flex: 1 0 25%;
+        flex: 1 0 25%; } }
+    .gallery__item a {
+      display: block;
+      height: 100%;
+      width: 100%; }
+      .gallery__item a::after {
+        background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0)));
+        background: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0) 100%);
+        background: -o-linear-gradient(bottom, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0) 100%);
+        background: linear-gradient(bottom, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0) 100%);
+        bottom: 0.5rem;
+        content: "";
+        display: block;
+        opacity: 0;
+        left: 0.5rem;
+        height: calc(100% - 1rem);
+        position: absolute;
+        right: 0.5rem;
+        top: 0.5rem;
+        -webkit-transition: all .24s ease-out;
+        -o-transition: all .24s ease-out;
+        transition: all .24s ease-out;
+        width: calc(100% - 1rem); }
+      .gallery__item a:hover::after {
+        opacity: 1; }
     .gallery__item img {
       display: block;
+      height: 100%;
+      -o-object-fit: cover;
+      object-fit: cover;
       width: 100%; }
+    .gallery__item figcaption {
+      bottom: 1.2rem;
+      color: #ffffff;
+      left: 50%;
+      opacity: 0;
+      position: absolute;
+      text-align: center;
+      -webkit-transform: translate(-50%, 1.2rem);
+      -ms-transform: translate(-50%, 1.2rem);
+      transform: translate(-50%, 1.2rem);
+      -webkit-transition: all .24s ease-out;
+      -o-transition: all .24s ease-out;
+      transition: all .24s ease-out; }
+    .gallery__item:hover figcaption {
+      opacity: 1;
+      -webkit-transform: translate(-50%, 0);
+      -ms-transform: translate(-50%, 0);
+      transform: translate(-50%, 0); }
 
 .pswp--dark .pswp__bg {
   background: #000000; }
