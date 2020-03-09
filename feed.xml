@@ -3,7 +3,7 @@
     <title>thedeep3nd.io</title>
     <link href="https://thedeep3nd.io/feed.xml" rel="self" />
     <link href="https://thedeep3nd.io" />
-    <updated>2020-03-08T20:35:22-04:00</updated>
+    <updated>2020-03-08T20:40:11-04:00</updated>
     <author>
         <name>siddharth</name>
     </author>
@@ -44,13 +44,11 @@
         <updated>2018-10-26T20:13:23-04:00</updated>
             <summary>
                 <![CDATA[
-                        <img src="https://thedeep3nd.io/media/posts/2/IMG_0007.png" alt="" />
                     or working through minor issues w/ publii/gh-pages/namecheapnamecheap needs DNS records which point&hellip;
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
-                    <img src="https://thedeep3nd.io/media/posts/2/IMG_0007.png" alt="" />
                 <h4><span  >or</span> <span style="text-decoration: underline;"><em>working through minor issues w/ publii/gh-pages/namecheap</em></span></h4>
 <p><span style="text-decoration: underline;">namecheap needs DNS records which point to gh-pages' IP addresses. </span></p>
 <p>This needs to be updated through Namecheap (in the domain 'control panel'), keeping in mind that they aren't hosting anything. That is left up to the user; options are to either:</p>
